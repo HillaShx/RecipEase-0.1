@@ -8,7 +8,7 @@ from .models import Recipe
 # Create your views here.
 def index(request):
   if request.method == "POST":
-    query_list = request.POST["search_query"].replace(" ","").split(",")
+    query_list = [i.strip() for i in request.POST["search_query"].split(",")]
     exclusion_queries = ""
     inclusion_queries = ""
     for query in query_list:
