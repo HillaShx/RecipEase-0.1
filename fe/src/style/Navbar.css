@@ -1,0 +1,39 @@
+#navbar-logo {
+  height: 100px;
+}
+
+.Navbar {
+  background-image: linear-gradient(#ecbe45, #ffb407);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#search-bar {
+  border: none;
+  padding: 6px 8px;
+  width: 370px;
+  background-color: #f7d786;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 3px;
+  font-family: monospace;
+}
+
+.butn {
+  display: inline-block;
+  position: absolute;
+  bottom: 3px;
+  padding: 6px 8px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-butn {
+  left: 495px;
+  background-color: green;
+}

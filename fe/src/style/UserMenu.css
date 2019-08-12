@@ -1,0 +1,23 @@
+.UserMenu {
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  right: 12px;
+}
+
+
+.usermenu-box {
+  position: absolute;
+  right: 5px;
+  top: 18px;
+  height: 440px;
+  width: 140px;
+  background-color: green;
+}
+
+.collapsed {
+  opacity: 0;
+  height: 0;
+  transform: all 0.7s ease-out 0.2s;
+}
+
