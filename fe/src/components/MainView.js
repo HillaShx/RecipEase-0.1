@@ -17,7 +17,7 @@ function MainView(props) {
       <div className="MainView">
         <ul>
           {recipes.map(recipe => (
-            <SearchResult name={recipe.name} />
+            <SearchResult recipe_details={recipe} />
           ))}
         </ul>
       </div>

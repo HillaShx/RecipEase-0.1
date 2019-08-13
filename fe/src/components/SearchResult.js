@@ -8,7 +8,9 @@ function SearchResult(props) {
   
   return (
     <div className="SearchResult">
-      <h3>{props.name}</h3>        
+      <h3>{props.recipe_details.name}</h3>
+      {/* improving the display of recipes */}
+
     </div>
   );
 };
