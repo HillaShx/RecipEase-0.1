@@ -5,7 +5,6 @@ import * as api from "./utils/recipesAPI"
 import MainView from './components/MainView'
 
 function App() {
-
   const [recipes, setRecipes] = useState([]);
   
   useEffect(()=>{
@@ -15,9 +14,15 @@ function App() {
     )
   },[])
 
+  function handleClickForSearch(query) {
+    api.getFilteredRecipes(query, recipes => 
+      setRecipes(recipes["results"]),
+      error => console.log(error)
+  )}
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar handleSearch={handleClickForSearch}/>
       <MainView recipes={recipes} />
     </div>
   );

@@ -46,9 +46,9 @@ export function getRecipes(successCallback, errorCallback) {
 export function getFilteredRecipes(search_query, successCallback, errorCallback) {
     $.ajax({
         type: "GET",
-        url: "list_filtered_recipes/",
+        url: "list_filtered_recipes/" + search_query,
         contentType: "application/json",
-        data: JSON.stringify(search_query),
+        // data: JSON.stringify(),
         success: successCallback,
         error: errorCallback
     });

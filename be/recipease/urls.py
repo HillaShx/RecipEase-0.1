@@ -24,6 +24,6 @@ urlpatterns = [
     path('list_recipes/', views.list_recipes, name="list_recipes"),
     
     # path('', views.index, name="index"),
-    path('search/', views.search, name="search"),
+    path('list_filtered_recipes/<search_query>', views.list_filtered_recipes, name="list_filtered_recipes"),
     url(r'^.*', TemplateView.as_view(template_name="index.html")),
 ]
