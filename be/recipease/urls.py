@@ -21,7 +21,9 @@ from . import views
 app_name = "recipease"
 
 urlpatterns = [
-    # url(r'^.*', TemplateView.as_view(template_name="index.html"))
-    path('', views.index, name="index"),
-    # path('search/', views.search, name="search")
+    path('list_recipes/', views.list_recipes, name="list_recipes"),
+    
+    # path('', views.index, name="index"),
+    path('search/', views.search, name="search"),
+    url(r'^.*', TemplateView.as_view(template_name="index.html")),
 ]
