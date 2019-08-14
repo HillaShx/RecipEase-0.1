@@ -9,15 +9,16 @@ function MainView(props) {
   const [recipes, setRecipes] = useState([]);
   
   useEffect(()=>{
+
     setRecipes(props.recipes)
   },[props])
 
   if (recipes.length) {
     return (
       <div className="MainView">
-        <ul>
+        <ul className="search-results">
           {recipes.map(recipe => (
-            <SearchResult recipe_details={recipe} />
+            <SearchResult recipe={recipe} />
           ))}
         </ul>
       </div>

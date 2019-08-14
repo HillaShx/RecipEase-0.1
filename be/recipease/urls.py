@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import url
 from django.urls import path
 from django.views.generic import TemplateView
+from django.conf.urls.static import static
+from django.conf import settings
 from . import views
 
 app_name = "recipease"
@@ -25,5 +27,5 @@ urlpatterns = [
     
     # path('', views.index, name="index"),
     path('list_filtered_recipes/<search_query>', views.list_filtered_recipes, name="list_filtered_recipes"),
-    url(r'^.*', TemplateView.as_view(template_name="index.html")),
+    url(r'^$', TemplateView.as_view(template_name="index.html")),
 ]

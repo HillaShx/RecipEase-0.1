@@ -1,0 +1,32 @@
+.SearchResult {
+  position: relative;
+  display: inline-block;
+  height: 204px;
+  width: 204px;
+  border-radius: 50%;
+  max-width: 800px;
+  margin: 12px;
+  background-color: #fce37f;
+}
+
+.SearchResult .img {
+  position: relative;
+  height: 180px;
+  width: 180px;
+  top: 12px;
+  left: 12px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.SearchResult:hover {
+  cursor: pointer;
+}
+
+.SearchResult .title {
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  background-color: rgba(255,255,255,0.6);
+  display: inline-block;
+}

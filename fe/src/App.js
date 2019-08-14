@@ -8,6 +8,7 @@ function App() {
   const [recipes, setRecipes] = useState([]);
   
   useEffect(()=>{
+    console.log(recipes)
     api.getRecipes(recipes =>
     setRecipes(recipes["results"]),
     error => console.log(error)

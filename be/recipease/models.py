@@ -14,7 +14,10 @@ class Recipe(models.Model):
   servings = models.TextField(db_column='Servings', blank=True, null=True)
   img_name = models.CharField(db_column='Img_Name', max_length=20, blank=True, null=True)
   rating = models.TextField(db_column='Rating', blank=True, null=True)
+  img = models.ImageField(upload_to='images', default='')
+
+  def __str__(self):
+    return str(self.id)
 
   class Meta:
-      managed = False
       db_table = 'recipes'

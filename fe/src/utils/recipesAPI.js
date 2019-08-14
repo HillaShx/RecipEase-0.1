@@ -48,7 +48,6 @@ export function getFilteredRecipes(search_query, successCallback, errorCallback)
         type: "GET",
         url: "list_filtered_recipes/" + search_query,
         contentType: "application/json",
-        // data: JSON.stringify(),
         success: successCallback,
         error: errorCallback
     });
