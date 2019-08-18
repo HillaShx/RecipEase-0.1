@@ -9,7 +9,6 @@ function MainView(props) {
   const [recipes, setRecipes] = useState([]);
   
   useEffect(()=>{
-
     setRecipes(props.recipes)
   },[props])
 
@@ -27,7 +26,7 @@ function MainView(props) {
     return (
       <div className="MainView">
         <ul>
-          No recipes matched you search! :(
+          No recipes matched your search! :(
         </ul>
       </div>
     );
